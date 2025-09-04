@@ -16,6 +16,8 @@
   border-radius: 6px;
   box-shadow: 0 300px 90vw rgba(0,0,0,0.2);
   z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: auto;
 }
 
 
@@ -62,3 +64,4 @@
 .dropdown-menu:hover {
   display: grid;
 }
+
