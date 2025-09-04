@@ -1,43 +1,53 @@
-/* Dropdown container */
-.dropdown {
-  position: relative;
-}
-
-/* Dropdown menu (hidden by default) */
+/* Dropdown menu */
 .dropdown-menu {
   position: absolute;
-  top: 100%; /* show below "Services" */
+  top: 100%;
   left: 0;
-  background: #333;
-  list-style: none;
   margin: 0;
-  padding: 10px 0;
-  display: none; /* hidden */
-  flex-direction: column;
-  min-width: 180px;
+  padding: 15px;
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  min-width: 300px;
+  max-width: 90vw;
   border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   z-index: 1000;
 }
 
-/* Dropdown items */
+/* Each dropdown item */
 .dropdown-menu li {
-  padding: 8px 15px;
+  list-style: none;
 }
 
-.dropdown-menu li a {
-  color: white;
-  text-decoration: none;
+.dropdown-item {
   display: block;
-  transition: 0.3s;
+  background: #444;
+  padding: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.3s, transform 0.2s;
 }
 
-.dropdown-menu li a:hover {
-  background: #444;
+.dropdown-item h4 {
+  margin: 0 0 5px;
+  font-size: 16px;
   color: #f39c12;
 }
 
-/* ✅ Show dropdown when hovered */
+.dropdown-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #ddd;
+}
+
+.dropdown-item:hover {
+  background: #555;
+  transform: translateY(-3px);
+}
+
+/* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
-  display: flex;
+  display: grid;
 }

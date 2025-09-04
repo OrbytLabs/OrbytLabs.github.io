@@ -86,6 +86,26 @@
   height: 32px;
 }
 
+/* Each item box */
+.dropdown-item {
+  padding: 10px;
+  height: 100px;      /* fixed height */
+  width: 300px;       /* fixed width */
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 320px;
+  background: #fff;
+  border: 1px solid #ddd;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
 
 
 /* Hero Styles */
