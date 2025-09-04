@@ -13,7 +13,7 @@
   gap: 15px;
   padding: 15px;
   border-radius: 6px;
-  min-width: 300px;
+  min-width: 500px;
   max-width: 90vw;
   z-index: 1000;
 }
@@ -38,6 +38,8 @@
 }
 
 .dropdown-item-service {
+  height: 120px;
+  width: 400px;
   position: center;
   display: block;
   background: #444;
@@ -51,12 +53,14 @@
 
 
 .dropdown-item-service h4 {
+  text-align: center; /* this will center the text horizontally */
   margin: 0 0 5px;
-  font-size: 15px;
+  font-size: 20px;
   color: #f39c12;
 }
 
 .dropdown-item-service p {
+  text-align: center; /* this will center the text horizontally */
   margin: 0;
   font-size: 14px;
   line-height: 1.0;

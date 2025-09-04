@@ -54,6 +54,7 @@
   margin: 0 0 5px;
   font-size: 15px;
   color: #f39c12;
+  text-align: center; /* this will center the text horizontally */
 }
 
 .dropdown-item-product p {
