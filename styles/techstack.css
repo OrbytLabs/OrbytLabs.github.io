@@ -1,0 +1,52 @@
+.tech-display {
+  text-align: center;
+  padding: 50px 20px;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.tech-display h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* The screen (rectangle box) */
+.display-screen {
+  width: 90%;
+  max-width: 1400px;
+  height: 100px; /* low height, wide box */
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Track that moves icons left → right */
+.icons-track {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  animation: scrollIcons 5s linear infinite;
+}
+
+/* Icons */
+.icons-track img {
+  height: 50px; /* stretch icons to fit display */
+  width: 50px;
+  margin: 30px;   
+  width: auto;
+  flex-shrink: 0;  /* prevent squishing */
+}
+
+/* Animation for continuous scroll */
+@keyframes scrollIcons {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%); /* adjust to loop icons */
+  }
+}
