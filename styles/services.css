@@ -1,0 +1,43 @@
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown menu (hidden by default) */
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* show below "Services" */
+  left: 0;
+  background: #333;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  display: none; /* hidden */
+  flex-direction: column;
+  min-width: 180px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+/* Dropdown items */
+.dropdown-menu li {
+  padding: 8px 15px;
+}
+
+.dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  background: #444;
+  color: #f39c12;
+}
+
+/* ✅ Show dropdown when hovered */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
