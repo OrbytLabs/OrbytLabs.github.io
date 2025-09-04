@@ -1,23 +1,34 @@
 /* Dropdown menu */
-/* Dropdown menu */
 .dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
   position: absolute;
-  top: 100%;              /* appear below nav */
-  left: 50%;              /* move to middle */
-  transform: translateX(-50%); /* center horizontally */
-  margin: 0;
-  padding: 15px;
-  display: none;
-  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
-
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
+  padding: 15px;
+  border-radius: 6px;
   min-width: 300px;
   max-width: 90vw;
-  border-radius: 6px;
-  box-shadow: 0 300px 90vw rgba(0,0,0,0.2);
   z-index: 1000;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  pointer-events: auto;
+}
+
+/* Show dropdown when hovering parent */
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  transition-delay: 0s; /* show immediately */
+}
+
+/* Keep menu visible for 5s after mouse leaves */
+.dropdown-menu {
+  transition: opacity 0.3s ease 5s, transform 0.3s ease 5s;
 }
 
 
@@ -57,11 +68,8 @@
 }
 
 /* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
-  display: grid;
-}
-
-.dropdown-menu:hover {
+.dropdown:hover .dropdown-menu,
+.dropdown .dropdown-menu:hover {
   display: grid;
 }
 
