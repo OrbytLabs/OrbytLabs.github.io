@@ -1,5 +1,5 @@
 /* Dropdown menu */
-.dropdown-menu-services {
+.dropdown-menu-products {
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
@@ -9,7 +9,7 @@
   left: 50%;
   transform: translateX(-50%) translateY(10px);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 15px;
   padding: 15px;
   border-radius: 6px;
@@ -19,7 +19,7 @@
 }
 
 /* Show dropdown when hovering parent */
-.dropdown:hover .dropdown-menu-services {
+.dropdown:hover .dropdown-menu-products {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
@@ -27,17 +27,17 @@
 }
 
 /* Keep menu visible for 5s after mouse leaves */
-.dropdown-menu-services {
+.dropdown-menu-products {
   transition: opacity 0.3s ease 5s, transform 0.3s ease 5s;
 }
 
 
 /* Each dropdown item */
-.dropdown-menu-services li {
+.dropdown-menu-products li {
   list-style: none;
 }
 
-.dropdown-item-service {
+.dropdown-item-product {
   position: center;
   display: block;
   background: #444;
@@ -50,27 +50,27 @@
 }
 
 
-.dropdown-item-service h4 {
+.dropdown-item-product h4 {
   margin: 0 0 5px;
   font-size: 15px;
   color: #f39c12;
 }
 
-.dropdown-item-service p {
+.dropdown-item-product p {
   margin: 0;
   font-size: 14px;
   line-height: 1.0;
   color: #ddd;
 }
 
-.dropdown-item-service :hover {
+.dropdown-item-product :hover {
   background: #555;
   transform: translateY(-3px);
 }
 
 /* Show dropdown on hover */
-.dropdown:hover .dropdown-menu-services,
-.dropdown .dropdown-menu-services {
+.dropdown:hover .dropdown-menu-products,
+.dropdown .dropdown-menu-products :hover {
   display: grid;
 }
 
