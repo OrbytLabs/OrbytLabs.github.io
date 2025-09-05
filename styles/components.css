@@ -570,68 +570,6 @@
     }
 }
 
-/* Footer Styles */
-.footer {
-    background: #2d3748;
-    color: white;
-    padding: 3rem 0 1rem;
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 3rem;
-    margin-bottom: 2rem;
-}
-
-.footer-brand h3 {
-    color: #667eea;
-    margin-bottom: 0.5rem;
-}
-
-.footer-brand p {
-    color: #a0aec0;
-}
-
-.footer-links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-}
-
-.footer-column h4 {
-    color: white;
-    margin-bottom: 1rem;
-}
-
-.footer-column ul {
-    list-style: none;
-}
-
-.footer-column ul li {
-    margin-bottom: 0.5rem;
-}
-
-.footer-column ul li a {
-    color: #a0aec0;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-column ul li a:hover {
-    color: #667eea;
-}
-
-.footer-bottom {
-    border-top: 1px solid #4a5568;
-    padding-top: 1rem;
-    text-align: center;
-}
-
-.footer-bottom p {
-    color: #a0aec0;
-    margin: 0;
-}
 
 .map-section {
   margin-top: -35px;  /* moves the map up */
